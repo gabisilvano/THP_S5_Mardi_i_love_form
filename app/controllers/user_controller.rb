@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-	 #attr_accessor :username, :bio, :mail
+	 attr_accessor :username, :bio, :mail
   def new
   	@user = User.new
   	@users = User.last
