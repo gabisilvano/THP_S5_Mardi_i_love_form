@@ -1,0 +1,7 @@
+<h1>Enter new user:</h1>
+<%= form_for @user, url: {action: "create"} do |f| %>
+	<%= f.text_field :username %>
+	<%= f.text_field :mail %>
+	<%= f.text_field :bio %>
+	<%= f.submit %>
+<% end %>
